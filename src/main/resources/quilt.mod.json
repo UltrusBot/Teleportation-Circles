@@ -1,14 +1,14 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "com.example",
-		"id": "example_mod",
+		"group": "me.ultrusmods",
+		"id": "teleportationcircles",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mod Name",
-			"description": "A short description of your mod.",
+			"name": "Teleportation Circles",
+			"description": "A mod letting you draw teleportation circles that teleport you and other entities across the world.",
 			"contributors": {
-				"Your name here": "Owner"
+				"UltrusBot": "Owner"
 			},
 			"contact": {
 				"homepage": "https://example.com/",
@@ -19,7 +19,7 @@
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "com.example.example_mod.ExampleMod"
+			"init": "me.ultrusmods.teleportationcircles.TeleportationCirclesMod"
 		},
 		"depends": [
 			{
@@ -28,13 +28,13 @@
 			},
 			{
 				"id": "quilted_fabric_api",
-				"versions": ">=2.0.0-"
+				"versions": ">=4.0.0-"
 			},
 			{
 				"id": "minecraft",
-				"versions": ">=1.19"
+				"versions": ">=1.19.2"
 			}
 		]
 	},
-	"mixin": "example_mod.mixins.json"
+	"mixin": "teleportationcircles.mixins.json"
 }
